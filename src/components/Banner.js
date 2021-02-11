@@ -1,11 +1,11 @@
 import React from 'react'
 
-function HomeScreen() {
+function Banner() {
     return (
         <div>
-            HomeScreen
+            
         </div>
     )
 }
 
-export default HomeScreen
+export default Banner
