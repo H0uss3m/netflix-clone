@@ -29,7 +29,7 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
                                 src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path
                                     }`}
                                 alt={movie.name} />
-                        <h3>{truncate((movie.name || movie.title),20)}</h3>
+                            <h3>{truncate((movie.name || movie.title), 20)}</h3>
                         </div>
                     )
                 )
