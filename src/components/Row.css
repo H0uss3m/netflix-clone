@@ -27,7 +27,8 @@
 .row_poster:hover {
     transform: scale(1.00);
     opacity:1;
-    border: 0.2rem solid white;
+    border: 2px solid beige;
+    max-height: 95px;
 }
 .row_posterLarge {
     max-height: 250px;
@@ -35,7 +36,8 @@
 .row_posterLarge:hover {
     transform: scale(1.09);
     opacity:1;
-    border: 0.2rem solid white;
+    border: 2px solid beige;
+    max-height: 245px;
 }
 
 .poster {
