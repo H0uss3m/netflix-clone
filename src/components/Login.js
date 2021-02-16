@@ -34,9 +34,12 @@ function Login() {
                                 <form>
                                     <input
                                         type="email"
-                                        onClick={() => setSignIn(true)}
                                         placeholder="Email Adress" />
-                                    <button className="loginScreen_getStarted">GET STARTED</button>
+                                    <button
+                                        className="loginScreen_getStarted"
+                                        onClick={() => setSignIn(true)}>
+                                        GET STARTED
+                                    </button>
                                 </form>
                             </div>
                         </>
