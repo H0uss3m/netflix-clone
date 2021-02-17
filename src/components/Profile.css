@@ -35,6 +35,13 @@
     font-size: 15px;
     padding-left: 20px;
 }
+.profileScreen_plans {
+    margin-top: 20px
+}
+.profileScreen_plans > h3 {
+    border-bottom: 1px solid #282c2d;
+    padding-bottom: 10px;
+}
 .profileScreen_plans > button {
     padding: 10px 20px;
     font-size: 1rem;
