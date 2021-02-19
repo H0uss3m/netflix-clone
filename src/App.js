@@ -41,6 +41,9 @@ function App() {
               <Route exact path="/profile" >
                 <Profile />
               </Route>
+              {/* <Route exact path="/favorite">
+                <Favorite />
+              </Route> */}
               <Route exact path="/">
                 <HomeScreen />
               </Route>

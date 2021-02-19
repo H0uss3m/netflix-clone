@@ -36,3 +36,10 @@
     height: 30px;
     cursor: pointer;
 }
+.nav_favorite {
+    position: fixed;
+    right: 65px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

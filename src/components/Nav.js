@@ -22,10 +22,15 @@ function Nav() {
                     alt="netflix-logo"
                 />
                 <img
+                    // onClick={() => history.push('/favorite')}
+                    className="nav_favorite"
+                    src="https://freepngimg.com/thumb/heart/36704-5-dark-red-heart-transparent-background.png"
+                    alt="favorite-logo" />
+                <img
                     onClick={() => history.push('/profile')}
                     className="nav_avatar"
                     src="https://apex.oracle.com/pls/apex/javainhand/r/69649/files/static/v7/avatar.png"
-                    alt="avatar"
+                    alt="profile-avatar"
                 />
             </div>
         </div>
