@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { auth } from "../firebase";
+import { auth, provider } from "../firebase";
 import "./SignInScreen.css";
 
 const SignInScreen = ({ register, signIn, email }) => {
@@ -16,9 +16,28 @@ const SignInScreen = ({ register, signIn, email }) => {
         registerPasswordRef.current.value
       )
       .then((authUser) => {
-        console.log("authUser", authUser);
+        // console.log("authUser", authUser);
       })
       .catch((error) => alert(error.message));
+  };
+  const useGmailToRegister = (e) => {
+    e.preventDefault();
+    auth
+      .signInWithPopup(provider)
+      .then((result) => {
+        // /** @type {firebase.auth.OAuthCredential} */
+        // var credential = result.credential;
+
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        // var token = credential.accessToken;
+        // console.log('token',token)
+        // The signed-in user info.
+        // var user = result.user;
+        // console.log('user',user)
+      })
+      .catch((error) => {
+        console.log("error", error.message);
+      });
   };
 
   const onSignIn = (e) => {
@@ -68,13 +87,11 @@ const SignInScreen = ({ register, signIn, email }) => {
             <button type="submit" onClick={onRegister}>
               Register
             </button>
+            <button type="submit" onClick={useGmailToRegister}>
+              Register with Gmail
+            </button>
           </>
         )}
-
-        {/* <h4> */}
-        {/* <span className="SignInScreen_gray">New to Netflix?</span> */}
-        {/* <span className="SignInScreen_link" onClick={register}>Sign Up now.</span> */}
-        {/* </h4> */}
       </form>
     </div>
   );
