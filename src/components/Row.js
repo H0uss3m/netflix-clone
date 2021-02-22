@@ -4,13 +4,14 @@ import "./Row.css";
 import truncate from "../services";
 import { useDispatch, useSelector } from "react-redux";
 import { selectFavorite, addFavorite, removeFavorite } from "../features/favoriteSlice";
+var _ = require("lodash");
 
 function Row({ title, fetchUrl, isLargeRow = false }) {
   const [movies, setMovies] = useState([]);
   const favorite = useSelector(selectFavorite);
   const dispatch = useDispatch();
 
-  console.log("favorite", favorite);
+  console.log("favorite", _.uniq(favorite));
   const base_url = "https://image.tmdb.org/t/p/original/";
 
   useEffect(() => {

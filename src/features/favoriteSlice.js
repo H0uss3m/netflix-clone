@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-var _ = require("lodash");
+
 export const favoriteSlice = createSlice({
   name: "favorite",
   initialState: {
@@ -10,6 +10,7 @@ export const favoriteSlice = createSlice({
     addFavorite: (state, action) => {
       state.favorite = [...state.favorite, action.payload];
     },
+
     removeFavorite: (state, action) => {
       state.favorite = [
         ...state.favorite.filter(
