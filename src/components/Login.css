@@ -10,6 +10,7 @@
     width: 150px;
     object-fit: contain;
     padding-left: 20px;
+    cursor: pointer
 }
 .loginScreen_button {
     position: fixed;
@@ -23,8 +24,17 @@
     border: none;
     cursor: pointer;
 }
-.loginScreen_background {
-
+.register_button {
+    position: fixed;
+    right: 125px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
 }
 .loginScreen_gradient {
     width: 100%;
