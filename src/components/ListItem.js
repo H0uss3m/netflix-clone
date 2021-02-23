@@ -11,6 +11,7 @@ const ListItem = ({ movie }) => {
   const removeFromList = (movieItem) => {
     dispatch(removeFavorite(movieItem));
   };
+
   return (
     <div className="ListItemScreen_body">
       <div className="ListItemScreen_info">
