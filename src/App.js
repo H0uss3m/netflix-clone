@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomeScreen from "./components/HomeScreen";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
+import Favorite from './components/Favorite'
 import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
@@ -38,9 +39,9 @@ function App() {
             <Route exact path="/profile">
               <Profile />
             </Route>
-            {/* <Route exact path="/favorite">
+            <Route exact path="/favorite">
                 <Favorite />
-              </Route> */}
+              </Route>
             <Route exact path="/">
               <HomeScreen />
             </Route>

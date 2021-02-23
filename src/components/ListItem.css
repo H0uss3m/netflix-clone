@@ -1,0 +1,42 @@
+.ListItemScreen_img {
+  max-height: 200px;
+  object-fit: contain;
+  transition: transform 450ms;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  border: 9px solid;
+}
+.ListItemScreen_info {
+  margin-right: 30px;
+}
+.ListItemScreen_body {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 5%;
+}
+.ListItem_description {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.87);
+  border-radius: 15px;
+  padding: 2%;
+}
+.ListItem_description > p {
+  text-align: left;
+  /* color:black; */
+}
+.ListItemScreen_title {
+  border-bottom: 2px solid;
+  margin-bottom: 15px;
+}
+.ListItem_delete {
+  background-color: white;
+  margin-top: 5%;
+}
+.ListItem_delete_button {
+  color: #e50914;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
