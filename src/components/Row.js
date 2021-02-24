@@ -34,7 +34,6 @@ const Row = ({ title, fetchUrl, isLargeRow = false }) => {
               (!isLargeRow && movie.backdrop_path)) && (
               <div key={index} className="poster">
                 <img
-                  onClick={() => addToList(movie)}
                   className={`row_poster ${isLargeRow && "row_posterLarge"}`}
                   key={movie.id}
                   src={`${base_url}${
@@ -42,7 +41,7 @@ const Row = ({ title, fetchUrl, isLargeRow = false }) => {
                   }`}
                   alt={movie.name}
                 />
-                <h3>{truncate(movie.name || movie.title, 20)}</h3>
+                <h3>{truncate(movie.name || movie.title, 20)} <span onClick={() => addToList(movie)}>add to favorite</span></h3>
               </div>
             )
         )}

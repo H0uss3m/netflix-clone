@@ -18,7 +18,6 @@
     max-height: 100px;
     object-fit: contain;
     margin-right: 10px;
-    /* width: 100%; */
     transition: transform 450ms;
     overflow-y: hidden;
     overflow-x: hidden;  
@@ -48,10 +47,20 @@
 .poster img {
     cursor: pointer;
  }
-.poster h3 {
+.poster > h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-weight: bold;
     font-size: medium;
     margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.poster > h3 > span {
+    cursor: pointer;
+    background-color: white;
+    color: #e50914;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 4px;
 }
