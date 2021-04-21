@@ -15,7 +15,7 @@ const ListItem = ({ movie }) => {
       }`
     )
       ? dispatch(removeFavorite(movieItem))
-      : console.log()
+      : console.log('Error Remove')
   }
 
   return (
